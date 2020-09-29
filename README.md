@@ -16,8 +16,7 @@ Used to send notification email for TODO task as per notification time provided 
 Execute database script present at \..\Database_Script\todo.sql
 
 # Steps to configure Windows Service :
-NOTE : Build Solution in Release mode.
-1.
+1. NOTE : Build Solution in Release mode.
 Open WindowsMailService.exe.config file located at \..\TODODesktopUtility\WindowsMailService\bin\Release
 	a. Add Username and Password at line #7
 		e.g. <add key="connectionString" value="Server=localhost;Database=todo;Uid=root;Pwd=root;" />
@@ -27,27 +26,21 @@ Open WindowsMailService.exe.config file located at \..\TODODesktopUtility\Window
 		e.g. <add key="Password" value="PASSWORD@123"/>
 	d. Update host if want to change. Recommended to use smtp.gmail.com
 		e.g <add key="Host" value="smtp.gmail.com"/>
-2. 
-Install WindowsMailService windows service locally.
+2. Install WindowsMailService windows service locally.
 	a. Goto following path \..\TODODesktopUtility\WindowsMailService\bin\Release and execute command : 
 		Open Command Prompt as Administrator.
 		WindowsMailService.exe install
-3.
-Start WindowsMailService windows service using following command : 
+3. Start WindowsMailService windows service using following command : 
 	WindowsMailService.exe start
-4.
-Stop WindowsMailService windows service using following command : 
+4. Stop WindowsMailService windows service using following command : 
 	WindowsMailService.exe stop
-5.
-Uninstall/Remove WindowsMailService windows service using following command : 
+5. Uninstall/Remove WindowsMailService windows service using following command : 
 	WindowsMailService.exe uninstall
 
 # Steps to configure Desktop Utility :
-NOTE : Build Solution in Release mode.
-1.
+1. NOTE : Build Solution in Release mode.
 Open TODODesktopUtility.exe.config file located in \..\TODODesktopUtility\TODODesktopUtility\bin\Release\
 	a. Add Username and Password at line #10
 		e.g. <add key="connectionString" value="Server=localhost;Database=todo;Uid=root;Pwd=root;" />
-2.
-Execute TODODesktopUtility.exe file located at \..\TODODesktopUtility\TODODesktopUtility\bin\Release\
+2. Execute TODODesktopUtility.exe file located at \..\TODODesktopUtility\TODODesktopUtility\bin\Release\
 	a. Create new user and login into the application to create TODO Task.
