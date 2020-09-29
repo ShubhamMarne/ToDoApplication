@@ -21,3 +21,4 @@ NOTE : Build Solution in Release mode.
 Open WindowsMailService.exe.config file located at \..\TODODesktopUtility\WindowsMailService\bin\Release
 a. Add Username and Password at line #7
 e.g. <add key="connectionString" value="Server=localhost;Database=todo;Uid=root;Pwd=root;" />
+
