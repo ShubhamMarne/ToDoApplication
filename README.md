@@ -19,13 +19,13 @@ Execute database script present at \..\Database_Script\todo.sql
 NOTE : Build Solution in Release mode.
 1.
 Open WindowsMailService.exe.config file located at \..\TODODesktopUtility\WindowsMailService\bin\Release
-	a. Add Username and Password at line #7
+	1. Add Username and Password at line #7
 		e.g. <add key="connectionString" value="Server=localhost;Database=todo;Uid=root;Pwd=root;" />
-	b. Add From email at line #8
+	2. Add From email at line #8
 		e.g. <add key="FromMail" value="test@gmail.com"/>
-	c. Add Password for From email at line #9
+	3. Add Password for From email at line #9
 		e.g. <add key="Password" value="PASSWORD@123"/>
-	d. Update host if want to change. Recommended to use smtp.gmail.com
+	4. Update host if want to change. Recommended to use smtp.gmail.com
 		e.g <add key="Host" value="smtp.gmail.com"/>
 2. 
 Install WindowsMailService windows service locally.
