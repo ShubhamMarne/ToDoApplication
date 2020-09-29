@@ -16,8 +16,8 @@ Used to send notification email for TODO task as per notification time provided 
 Execute database script present at \..\Database_Script\todo.sql
 
 # Steps to configure Windows Service :
-NOTE : Build Solution in Release mode.
 1.
+NOTE : Build Solution in Release mode.
 Open WindowsMailService.exe.config file located at \..\TODODesktopUtility\WindowsMailService\bin\Release
 a. Add Username and Password at line #7
 e.g. <add key="connectionString" value="Server=localhost;Database=todo;Uid=root;Pwd=root;" />
